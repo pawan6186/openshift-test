@@ -2,9 +2,9 @@ package com.jlcindia.struts;
 import java.sql.*;
 public class DBUtil{
 private static final String DRIVER_CLASS="com.mysql.jdbc.Driver";
-private static final String URL="jdbc:mysql://localhost:3306/yogdb";
-private static final String USERNAME="root";
-private static final String PASSWORD="root";
+private static final String URL="jdbc:mysql://$OPENSHIFT_MYSQL_DB_HOST:$OPENSHIFT_MYSQL_DB_PORT/";
+private static final String USERNAME="adminlw54KTK";
+private static final String PASSWORD="cMAEMAJZWTps";
 static{
 try{
 Class.forName(DRIVER_CLASS);
